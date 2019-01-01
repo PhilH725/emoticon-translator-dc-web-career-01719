@@ -9,7 +9,6 @@ def load_library(file_path)
     library["get_meaning"][emote_array[1]] = meaning
     library["get_emoticon"][emote_array[0]] = emote_array[1]
   end
-  #puts library
   library
 end
 
