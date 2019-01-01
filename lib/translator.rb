@@ -12,8 +12,16 @@ def load_library(file_path)
   library
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emote)
   # code goes here
+  
+  load_library(file_path)["get_emoticon"].each do |eng_emote, jp_emote|
+    if emote == eng_emote
+      return jp_emote
+    end
+  end
+  puts "sorry"
+  
 end
 
 def get_english_meaning
